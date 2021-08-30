@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Ecommerce 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En este repaso, tendras que refactorizar varios archivos. La idea es implementar lo visto de react router dom y completar en donde falte codigo.
 
-## Available Scripts
+## Tips y Consejos
+- Pueden revisar el archivo App.js para ver como esta estructurado las rutas.
+- El archivo Login.jsx no hace nada. Simple codigo decorativo.
 
-In the project directory, you can run:
+## Consigna
+Home.jsx:
+- Si vemos en el `localhost:3000`, notaremos que cada producto espera poder ser selecionado. Deberas agregar lo que falta para ir a la ruta esperada.
 
-### `yarn start`
+Navbar.jsx:
+- Este archivo tiene un componente llamado `Search`, el mismo se encarga de buscar si lo que buscamos coincide con alguno de los productos.
+- Utilizar los elementos de react-router-dom en el import.
+- El problema esta en que al parecer no recibe props. Para este caso utilizaras [withRouter](https://reactrouter.com/web/api/withRouter). 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Search.jsx
+- Cuando termines de arreglar la Navbar.jsx, deberas agregar la forma para ir a las rutas solicitadas.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Product.jsx:
+- Se utiliza un componente de actualizacion de props. Deberas completarlo.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pasos para correr el proyecto
 
-### `yarn build`
+Relizar primero `npm install`
+Relizar segundo `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Versiones de NPM y NODE
+En caso de que el proyecto no poder hacer `npm install`, actualizar a las versiones:
+`NPM 7.19.1` o superior
+`NODE 16.5.0` o superior
